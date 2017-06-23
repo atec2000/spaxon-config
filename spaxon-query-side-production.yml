@@ -13,7 +13,7 @@ spring:
         queue: event.stream
         terminal: spaxon.axon.terminal
     rabbitmq:
-        hostname: rabbitmq
+        hostname: spaxon-rabbitmq
         username: test
         password: password
     data:

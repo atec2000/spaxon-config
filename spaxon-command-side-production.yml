@@ -16,7 +16,7 @@ spring:
         eventsCollectionName: events
         snapshotCollectionName: snapshots
     rabbitmq:
-        hostname: rabbitmq
+        hostname: spaxon-rabbitmq
         username: test
         password: password
     data:
