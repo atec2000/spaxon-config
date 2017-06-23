@@ -3,7 +3,7 @@ message: Greetings from the PRODUCT-QUERY-SIDE microservice [using the PRODUCTIO
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://discovery:8761/eureka/
+      defaultZone: http://spaxon-discovery:8761/eureka/
   instance:
     preferIpAddress: true
     

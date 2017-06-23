@@ -4,7 +4,7 @@ message: Greetings from the PRODUCT-COMMAND-SIDE microservice [using the PRODUCT
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://discovery:8761/eureka/
+      defaultZone: http://spaxon-discovery:8761/eureka/
   instance:
     preferIpAddress: true
     
@@ -21,7 +21,7 @@ spring:
         password: password
     data:
         mongodb:
-            uri: mongodb://mongodb:27017/spaxon
+            uri: mongodb://spaxon-mongodb:27017/spaxon
 logging:
     level:
         root: INFO
