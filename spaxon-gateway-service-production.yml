@@ -13,8 +13,6 @@ zuul:
   routes:
     spaxon-command-side:
       path: /commands/**
-    spaxon-query-side:
-      path: /queries/**
   debug:
     request: true
     response: true
