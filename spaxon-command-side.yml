@@ -21,7 +21,7 @@ spring:
         password: password
     data:
         mongodb:
-            uri: mongodb://localhost:27017/spaxon
+            uri: mongodb://localhost:27017/products
 logging:
     level:
         root: INFO
