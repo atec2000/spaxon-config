@@ -21,6 +21,7 @@ spring:
         password: password
     data:
         mongodb:
+            host: localhost
             uri: mongodb://localhost:27017/products
 logging:
     level:
@@ -33,5 +34,5 @@ logging:
             #data: DEBUG
             #transaction: DEBUG
         org.axonframework: INFO
-        com.soagrowers: INFO
+        com.spaxon: INFO
     file: ./build/logs/command-side-server.log
