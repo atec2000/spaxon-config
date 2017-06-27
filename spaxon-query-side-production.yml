@@ -30,5 +30,5 @@ logging:
             #data: DEBUG
             #transaction: DEBUG
         org.axonframework: INFO
-        com.soagrowers: INFO
+        com.spaxon: INFO
     file: ./logs/query-side-server.log
