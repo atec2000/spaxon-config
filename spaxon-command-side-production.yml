@@ -19,10 +19,21 @@ spring:
         hostname: spaxon-rabbitmq
         username: test
         password: password
-    data:
-        mongodb:
-            host: spaxon-mongodb        
-            uri: mongodb://spaxon-mongodb:27017/spaxon
+    datasource:
+        url: jdbc:mysql://localhost:3306/spaxon
+        driverClassName: com.mysql.jdbc.Driver
+        username: root
+        password: root
+        validation-query: SELECT 1
+    jpa:
+        database: mysql
+        show-sql: true
+        hibernate:
+            ddl-auto: create-drop
+    #data:
+        #mongodb:
+        #    host: spaxon-mongodb        
+        #    uri: mongodb://spaxon-mongodb:27017/spaxon
 logging:
     level:
         root: INFO
