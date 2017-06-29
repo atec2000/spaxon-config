@@ -19,10 +19,21 @@ spring:
         hostname: localhost
         username: test
         password: password
-    data:
-        mongodb:
-            host: localhost
-            uri: mongodb://localhost:27017/products
+    datasource:
+        url: jdbc:mysql://localhost:3306/spaxon
+        driverClassName: com.mysql.jdbc.Driver
+        username: root
+        password: root
+        validation-query: SELECT 1
+    jpa:
+        database: mysql
+        show-sql: true
+        hibernate:
+            ddl-auto: create-drop        
+    #data:
+        #mongodb:
+            #host: localhost
+            #uri: mongodb://localhost:27017/products
 logging:
     level:
         root: INFO
