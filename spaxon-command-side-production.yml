@@ -45,5 +45,5 @@ logging:
             #data: DEBUG
             #transaction: DEBUG
         org.axonframework: INFO
-        com.spaxon: INFO
+        com.spaxon: DEBUG
     file: ./logs/command-side-server.log
