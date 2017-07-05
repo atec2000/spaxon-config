@@ -30,6 +30,9 @@ spring:
         show-sql: true
         hibernate:
             ddl-auto: create-drop
+    devtools:
+        remote: 
+            secret: thisismysecret
     #data:
         #mongodb:
         #    host: spaxon-mongodb        
