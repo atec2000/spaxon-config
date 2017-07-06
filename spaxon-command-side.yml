@@ -4,7 +4,7 @@ message: Greetings from the PRODUCT-COMMAND-SIDE microservice [using the LOCALHO
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://spaxon-discovery:8761/eureka/
   instance:
     preferIpAddress: true
     
@@ -16,11 +16,11 @@ spring:
         eventsCollectionName: events
         snapshotCollectionName: snapshots
     rabbitmq:
-        hostname: localhost
+        hostname: spaxon-rabbitmq
         username: test
         password: password
     datasource:
-        url: jdbc:mysql://localhost:3306/spaxon
+        url: jdbc:mysql://spaxon-mysql:3306/spaxon
         driverClassName: com.mysql.jdbc.Driver
         username: root
         password: root
@@ -32,11 +32,11 @@ spring:
             ddl-auto: create-drop
     devtools:
         remote: 
-            secret: thisismysecret            
+            secret: thisismysecret
     #data:
         #mongodb:
-            #host: localhost
-            #uri: mongodb://localhost:27017/products
+        #    host: spaxon-mongodb        
+        #    uri: mongodb://spaxon-mongodb:27017/spaxon
 logging:
     level:
         root: INFO
@@ -48,5 +48,5 @@ logging:
             #data: DEBUG
             #transaction: DEBUG
         org.axonframework: INFO
-        com.spaxon: INFO
-    file: ./build/logs/command-side-server.log
+        com.spaxon: DEBUG
+    file: ./logs/command-side-server.log
