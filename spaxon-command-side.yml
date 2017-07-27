@@ -12,7 +12,7 @@ spring:
     application:
         exchange: spaxon.events.fanout.exchange
         queue: spaxon.default.queue
-        databaseName: products
+        databaseName: orders
         eventsCollectionName: events
         snapshotCollectionName: snapshots
     rabbitmq:
