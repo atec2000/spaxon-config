@@ -10,8 +10,8 @@ eureka:
     
 spring:
     application:
-        exchange: product.events.fanout.exchange
-        queue: product.default.queue
+        exchange: spaxon.events.fanout.exchange
+        queue: spaxon.default.queue
         databaseName: products
         eventsCollectionName: events
         snapshotCollectionName: snapshots
