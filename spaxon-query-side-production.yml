@@ -10,7 +10,7 @@ eureka:
 spring:
     application:
         exchange: spaxon.events.fanout.exchange
-        queue: event.stream
+        queue: spaxon.default.queue
         terminal: spaxon.axon.terminal
     rabbitmq:
         hostname: spaxon-rabbitmq
