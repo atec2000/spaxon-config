@@ -1,5 +1,9 @@
 message: Greetings from the PRODUCT-QUERY-SIDE microservice [using the PRODUCTION config].
 
+axon:
+  amqp:
+    exchange: spaxon.events.fanout.exchange
+    
 eureka:
   client:
     serviceUrl:
