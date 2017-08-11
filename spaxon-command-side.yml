@@ -1,5 +1,9 @@
 message: Greetings from the PRODUCT-COMMAND-SIDE microservice [using the LOCALHOST config].
 
+axon:
+  amqp:
+    exchange: spaxon.events.fanout.exchange
+
 #debug: true
 eureka:
   client:
