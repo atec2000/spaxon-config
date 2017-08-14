@@ -1,10 +1,8 @@
 message: Greetings from the PRODUCT-QUERY-SIDE microservice [using the PRODUCTION config].
 
 axon:
-  distributed:
-    enabled: true
   amqp:
-    exchange: spaxon.events.fanout.exchange
+    exchange: spaxon.events.fanout.exchange    
     
 eureka:
   client:
