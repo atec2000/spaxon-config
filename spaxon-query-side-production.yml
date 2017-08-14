@@ -4,7 +4,7 @@ axon:
   distributed:
     enabled: true
   amqp:
-    exchange: amq.fanout
+    exchange: spaxon.events.fanout.exchange
     
 eureka:
   client:
